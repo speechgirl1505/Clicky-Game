@@ -9,7 +9,6 @@ function Wrapper(props) {
         <ul>
         <li><a className="navbar-brand" href="/">Clicky Game</a></li>
         <li>Click an Image to Begin!</li>
-        <li>Score will go here</li>
         </ul>
       </nav>
   <div className="wrapper">{props.children}</div>

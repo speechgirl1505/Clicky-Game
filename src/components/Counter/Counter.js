@@ -1,4 +1,12 @@
-// import React from "react";
+import React, { Component } from "react";
+// import Peeps from "./components/Peeps";
+// import Wrapper from "./components/Wrapper";
+// import Title from "./components/Title";
+import friends from "./peeps.json";
+import './App.css';
+import "./style.css";
+
+
 
 // class Counter extends React.Component {
 //     // Setting the initial state of the Counter component
