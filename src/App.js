@@ -10,34 +10,27 @@ class App extends Component {
   state = {
     friends,
     score: 0,
-    clickedFriends: []
-    //-every time someone clicked save to array and with on click filter if id was clicked = something is in array you lose otherwise add one to score
-    //push to add to array not reassign value
-    //filter first to see if clicked is already in clicked friends
-     //   this.setState({ clicked: this.state.clicked.id });
   };
-// clickedAlready = id => {
-//   if (this.state.clickedFriends)
-// }
-  // removeFriend = id => {
-  //   // Filter this.state.friends for friends with an id not equal to the id being removed
-  //   const newfriends = this.state.friends.filter(friend => friend.id !== id);
-  //   // Set this.state.friends equal to the new friends array
- // this.setState({newFriends: friends})
-  // };
 
- getHigherScore = id => {
-    // const peeps = this.state.friends.filter(friend => friend.id == id);
-    const newScore = this.state.score + 1;
-    this.setState({ score: newScore});
-    if (newScore === 12) {
-      alert("You won")
-      this.setState({
-        score: 0
-      })
+ getHigherScore = async id => {
+    const peeps = this.state.friends.filter(friend => friend.id === id);
+    if (peeps[0].clicked === false) {
+      peeps[0].clicked = true;
+      await this.setState({score: this.state.score + 1})
+      console.log("super test")
+      if (this.state.score === 12) {
+        alert("You win!")
+        this.doOver();
+      }
+    } else {
+      alert("Suck it loser")
+      this.doOver();
     }
-    console.log(this.state.score)
-    console.log("who is this" + id)
+    this.randomFriends(this.state.friends)
+    
+  };
+
+  componentDidMount(){
     this.randomFriends(this.state.friends)
   };
 
@@ -55,6 +48,10 @@ class App extends Component {
       return array;
     }
 
+    doOver() {
+      this.setState({score: 0})
+      window.location.reload()
+    }
   // Map over this.state.friends and render a FriendCard component for each friend object
   render() {
     return (

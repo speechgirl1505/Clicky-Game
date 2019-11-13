@@ -7,8 +7,8 @@ function Peeps(props) {
       <div className="img-container">
         <img src={props.image} />
       </div>
-      <div className="content">
-      </div>
+      {/* <div className="content">
+      </div> */}
     </div>
   );
 }
