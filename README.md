@@ -1,5 +1,5 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-# Burger
+# Clicky Game
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -7,7 +7,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <h1 align="center">Burger</h1>
+  <h1 align="center">Clicky Game</h1>
     <a href="https://github.com/speechgirl1505/Clicky-Game"><strong>Documentation and Repo Link</strong></a>
     <br />
     
