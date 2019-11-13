@@ -6,9 +6,11 @@ function Wrapper(props) {
   return (
 <div>    
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <a className="navbar-brand" href="#">
-          Clicky Game
-        </a>
+        <ul>
+        <li><a className="navbar-brand" href="/">Clicky Game</a></li>
+        <li>Click an Image to Begin!</li>
+        <li>Score will go here</li>
+        </ul>
       </nav>
   <div className="wrapper">{props.children}</div>
   </div>

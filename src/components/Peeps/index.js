@@ -3,14 +3,11 @@ import "./style.css";
 
 function Peeps(props) {
   return (
-    <div className="card">
+    <div className="card" onClick={() => props.getHigherScore(props.id)} >
       <div className="img-container">
-        <img alt={props.name} src={props.image} />
+        <img src={props.image} />
       </div>
       <div className="content">
-      <span onClick={() => props.removeFriend(props.id)} className="remove">
-        𝘅
-      </span>
       </div>
     </div>
   );
