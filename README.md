@@ -1,68 +1,77 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Burger
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <h1 align="center">Burger</h1>
+    <a href="https://github.com/speechgirl1505/Clicky-Game"><strong>Documentation and Repo Link</strong></a>
+    <br />
+    
+  </p>
+</p>
+<!-- TABLE OF CONTENTS -->
+## Table of Contents
+- [About the Project](#about-the-project)
+  - [Built With](#built-with)
+  - [Organization](#Organization)
+- [Getting Started](#getting-started)
+  - [Installation](#installation)
+- [Acknowledgements](#acknowledgements)
+- [Contact](#contact)
+<!-- ABOUT THE PROJECT -->
 
-## Available Scripts
+## About The Project
 
-In the project directory, you can run:
+This app is all about clicking. Try to click on all 12 images without clicking on the same one twice. Just know every time you click the pictures will shuffle, so I hope you have been taking your ginkgo biloba. 
 
-### `npm start`
+### Built With
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [Node](https://nodejs.org/en/)
+- [Node Package - Express](https://www.npmjs.com/package/express)
+- [Node Package - Express-Handlebars](https://www.npmjs.com/package/express-handlebars)
+- [Node Package - DotEnv](https://www.npmjs.com/package/dotenv)
+- [Node Package - mysql](https://www.npmjs.com/package/mysql)
+- [othneildrew - Best README Template](https://github.com/othneildrew/Best-README-Template)
+<!-- GETTING STARTED -->
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repo
+```
+git clone https://github.com/speechgirl1505/Clicky-Game.git
+```
+2. Install NPM packages
+```
+npm install
+```
+3. 
+```
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+```
+<!-- Acknowledgements -->
+## Acknowledgements
+    - TA Cody Clark 
+    - TA Shawn Holcomb
+    - Some code was influenced by SMU Bootcamp class activties
+<!-- CONTACT -->
+## Contact
+Role Lead Developer for Clicky Game: Kala Elam
+Project Link: [https://github.com/speechgirl1505/Clicky-Game](https://github.com/speechgirl1505/Clicky-Game)
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/speechgirl1505/Clicky-Game.svg?style=flat-square
+[contributors-url]: https://github.com/speechgirl1505/Clicky-Game/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/speechgirl1505/Clicky-Game.svg?style=flat-square
+[forks-url]: https://github.com/speechgirl1505/Clicky-Game/network/members
+[stars-shield]: https://img.shields.io/github/stars/speechgirl1505/Clicky-Game.svg?style=flat-square
+[stars-url]: https://github.com/speechgirl1505/Clicky-Game/stargazers
+[issues-shield]: https://img.shields.io/github/issues/speechgirl1505/Clicky-Game.svg?style=flat-square
+[issues-url]: https://github.com/speechgirl1505/Clicky-Game/issues
