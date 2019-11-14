@@ -43,21 +43,6 @@
       "id": 9,
       "image": "https://media.giphy.com/media/d10dMmzqCYqQ0/giphy.gif",
       "clicked":false
-    },
-    {
-      "id": 10,
-      "image": "https://media.giphy.com/media/d10dMmzqCYqQ0/giphy.gif",
-      "clicked":false
-    },
-    {
-      "id": 11,
-      "image": "https://media.giphy.com/media/d10dMmzqCYqQ0/giphy.gif",
-      "clicked":false
-    },
-    {
-      "id": 12,
-      "image": "https://media.giphy.com/media/d10dMmzqCYqQ0/giphy.gif",
-    "clicked":false
     }
   ]
   

@@ -18,7 +18,7 @@ class App extends Component {
       peeps[0].clicked = true;
       await this.setState({score: this.state.score + 1})
       console.log("super test")
-      if (this.state.score === 12) {
+      if (this.state.score === 9) {
         alert("You win!")
         this.doOver();
       }
@@ -56,9 +56,14 @@ class App extends Component {
   render() {
     return (
       <Wrapper>
-        <Title>Clicky Game
+        <Title>
         <div className="header">
-        <h2>Score: {this.state.score} | Goal: 12</h2>
+          <h1>Clicky Game</h1>
+          <h3>Try to get to 9 by clicking a tile just know if you hit the same one twice you lose!</h3>
+          <h5>GIF is reflective of creator of this app while doing this assignment</h5>
+          <hr/>
+        
+        <h4>Score: {this.state.score} | Goal: 9</h4>
         </div>
         </Title>
         {this.state.friends.map(friend => (
