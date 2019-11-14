@@ -19,7 +19,7 @@ class App extends Component {
       peeps[0].clicked = true;
       await this.setState({score: this.state.score + 1})
       console.log("super test")
-      if (this.state.score === 3) {
+      if (this.state.score === 9) {
         // alert("You win!")
          setTimeout(this.doOver,2000)
         this.setState({winLose: "Congrats, I don't know how but you won!"})
