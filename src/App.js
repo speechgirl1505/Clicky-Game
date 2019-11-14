@@ -27,7 +27,7 @@ class App extends Component {
     } else {
       // alert("Suck it loser")
        setTimeout(this.doOver,2000)
-      this.setState({winLose: "Suck it Loser you lost!"})
+      this.setState({winLose: "Suck it Loser!"})
     }
     this.randomFriends(this.state.friends)
     
