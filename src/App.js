@@ -10,6 +10,7 @@ class App extends Component {
   state = {
     friends,
     score: 0,
+    winLose: ""
   };
 
  getHigherScore = async id => {
@@ -18,13 +19,15 @@ class App extends Component {
       peeps[0].clicked = true;
       await this.setState({score: this.state.score + 1})
       console.log("super test")
-      if (this.state.score === 9) {
-        alert("You win!")
-        this.doOver();
+      if (this.state.score === 3) {
+        // alert("You win!")
+         setTimeout(this.doOver,2000)
+        this.setState({winLose: "Congrats, I don't know how but you won!"})
       }
     } else {
-      alert("Suck it loser")
-      this.doOver();
+      // alert("Suck it loser")
+       setTimeout(this.doOver,2000)
+      this.setState({winLose: "Suck it Loser you lost!"})
     }
     this.randomFriends(this.state.friends)
     
@@ -48,8 +51,8 @@ class App extends Component {
       return array;
     }
 
-    doOver() {
-      this.setState({score: 0})
+    doOver = async () => {
+      await this.setState({score: 0})
       window.location.reload()
     }
   // Map over this.state.friends and render a FriendCard component for each friend object
@@ -64,6 +67,7 @@ class App extends Component {
           <hr/>
         
         <h4>Score: {this.state.score} | Goal: 9</h4>
+        <p>{this.state.winLose}</p>
         </div>
         </Title>
         {this.state.friends.map(friend => (
